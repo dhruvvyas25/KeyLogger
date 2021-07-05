@@ -72,8 +72,6 @@ def on_press(key):
 
 def on_release(key):
     pass
-
-
 #    if key == key.esc:
 #        return False
 
